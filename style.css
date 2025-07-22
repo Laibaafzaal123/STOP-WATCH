@@ -1,51 +1,65 @@
+/* Full screen background */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('White-Background-Best-Wallpaper-16568.jpg'); /* replace with your image URL if needed */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('White-Background-Best-Wallpaper-16568.jpg') no-repeat center center/cover;
+}
 
-  #stopWatch {
-    font-size: 60px;
-    font-weight: bold;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px 40px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  }
+/* Stopwatch outer box */
+.stopwatch-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 
-  .buttons {
-    display: flex;
-    gap: 20px;
-  }
+/* Heading style */
+.heading {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
 
-  button {
-    padding: 15px 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    background-color: #baaa93;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  }
+/* Stopwatch timer text */
+#stopWatch {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
 
-  button:hover {
-    background-color: #74716d;
-    transform: scale(1.05);
-  }
+/* Button group */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-  button:active {
-    transform: scale(0.95);
-  }
+/* Button styles */
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #b6b3ad;
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #716f6c;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}

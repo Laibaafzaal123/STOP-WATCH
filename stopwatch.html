@@ -11,15 +11,18 @@
     <!-- calling function in event  -->
      <!-- <button ondblclick="greet()">click</button> -->
     <!-- <button onclick="greet()">click</button> -->
-         <div id="stopWatch">
-            00:00:00
+    <body>
+        <div class="stopwatch-container">
+          <h1 class="heading">Stopwatch</h1>
+          <div id="stopWatch">00:00:00</div>
+          <div class="buttons">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+          </div>
         </div>
-         <div class="buttons">
-            <button onclick= "start()">Start</button>
-            <button onclick = "stop()">Stop</button>
-            <button onclick = "reset()">Reset</button>
-        </div> 
-    </div> 
-    <script src="./stopwatch.js"></script>
-</body>
-</html>
+      
+        <script src="./stopwatch.js"></script>
+      </body>
+      
+    
